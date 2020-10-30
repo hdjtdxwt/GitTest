@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,5 +14,11 @@
         android:layout_height="wrap_content"
         android:text="第一个textView，待会删除的!"
         />
-
+    <Button
+        android:id="@+id/btn1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮1"
+        />
 </LinearLayout>
