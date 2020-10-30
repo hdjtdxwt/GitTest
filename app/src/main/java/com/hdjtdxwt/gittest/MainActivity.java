@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView textView;
-    Button btn1;
+    Button btn1,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn1 = findViewById(R.id.btn1);
         btn1.setOnClickListener(this);
+
+        btn2 = findViewById(R.id.btn2);
+        btn2.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } break;
             case R.id.btn1:{
                 Toast.makeText(this, "按钮1", Toast.LENGTH_SHORT).show();
+            }break;
+            case R.id.btn2:{
+                Toast.makeText(this, "按钮2点击了", Toast.LENGTH_SHORT).show();
             }break;
         }
     }
